@@ -31,6 +31,12 @@ $myGridConfig->addComponent(new GridFieldSortableRows('{Column to store sort}'))
 
 To move an item to another page drag the row over the respective page button and release.
 
+```php
+    public static $default_sort='{Column to store sort}';
+```
+Remember, you will also need to set the default_sort in your DataObject.
+
+
 #### Full code Examples
 * [has_many relationship] (https://github.com/UndefinedOffset/SortableGridField/blob/master/docs/HasManyExample.md)
 * [many_many relationship] (https://github.com/UndefinedOffset/SortableGridField/blob/master/docs/ManyManyExample.md)
